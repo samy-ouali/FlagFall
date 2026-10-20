@@ -33,13 +33,16 @@ public class FlagSpawner : MonoBehaviour
     private float timer;
     private float gameTime;
 
+    // Vitesse de chute actuelle (enregistree dans les logs).
+    public float CurrentSpeed { get { return fallSpeed + speedIncreasePerSecond * gameTime; } }
+
     void Update()
     {
         gameTime += Time.deltaTime;
         timer += Time.deltaTime;
 
         float currentInterval = Mathf.Max(minInterval, spawnInterval - intervalDecreasePerSecond * gameTime);
-        float currentSpeed = fallSpeed + speedIncreasePerSecond * gameTime;
+        float currentSpeed = CurrentSpeed;
 
         if (timer >= currentInterval)
         {
@@ -53,7 +56,8 @@ public class FlagSpawner : MonoBehaviour
         if (GameManager.Instance == null || flagPrefab == null) return;
 
         Country target = GameManager.Instance.GetCurrentTarget();
-        Country toSpawn = (Random.value < chanceCorrectFlag) ? target : GameManager.Instance.GetRandomCountry();
+        // Faux drapeau choisi par le GameManager (adaptatif si l'AdaptiveDirector est present).
+        Country toSpawn = (Random.value < chanceCorrectFlag) ? target : GameManager.Instance.GetDistractor();
 
         Vector3 pos = new Vector3(Random.Range(minX, maxX), startY, 0f);
         GameObject obj = Instantiate(flagPrefab, pos, Quaternion.identity);

@@ -1,0 +1,12 @@
+{
+  "Random (original game)": {
+    "mean_success": 0.48596666666666666,
+    "start_knowledge": 0.5014648995325303,
+    "final_knowledge": 0.5980777126468213
+  },
+  "Adaptive (ML)": {
+    "mean_success": 0.5823333333333334,
+    "start_knowledge": 0.5014197133933388,
+    "final_knowledge": 0.582283345619658
+  }
+}

@@ -1016,7 +1016,7 @@ MonoBehaviour:
     flag: {fileID: 3251315677239181439, guid: 655cdc81b73a841f3bbd963e0d560e20, type: 3}
   - countryName: France
     flag: {fileID: -1964690450239089126, guid: bbc4f74b205a6476996fbda8d6e84965, type: 3}
-  - countryName: Royaume_Uni
+  - countryName: Royaume-Uni
     flag: {fileID: -9034194505042516738, guid: 15ece319ed93d4881ba60afa819262b8, type: 3}
   - countryName: "Gr\xE8ce"
     flag: {fileID: 6204308163772835873, guid: d538d8bdc8b3f4f03a51110d467392bd, type: 3}
@@ -1030,15 +1030,105 @@ MonoBehaviour:
     flag: {fileID: -3200642876631112707, guid: 966d77916b9fb4d06957c87f86dd159c, type: 3}
   - countryName: "Su\xE8de"
     flag: {fileID: -3369065597481863057, guid: 7dffc118071344bc5bbbaa3f058a4c4c, type: 3}
-  - countryName: Etats-Unis
+  - countryName: "\xC9tats-Unis"
     flag: {fileID: 938470346616453969, guid: 9e37d4bc22928423090faa7931fe5f7d, type: 3}
+  - countryName: Tchad
+    flag: {fileID: 21300000, guid: 5bc796110cef34649ac810f3f9612cdd, type: 3}
+  - countryName: Roumanie
+    flag: {fileID: 21300000, guid: 23419a4301dc0491faa285cf73b8ef34, type: 3}
+  - countryName: "Indon\xE9sie"
+    flag: {fileID: 21300000, guid: 290db1fb077224bbb955785cc5f586fc, type: 3}
+  - countryName: Monaco
+    flag: {fileID: 21300000, guid: 3c6cc07bc2fc7411298541bbee6c0314, type: 3}
+  - countryName: Pologne
+    flag: {fileID: 21300000, guid: acfbfceb288034453b3ae64c66a1af79, type: 3}
+  - countryName: Irlande
+    flag: {fileID: 21300000, guid: 9c07254e57ec246c49ef24769784cd8e, type: 3}
+  - countryName: "C\xF4te d'Ivoire"
+    flag: {fileID: 21300000, guid: 9ab347640bb6440519298d8c4ffd78bb, type: 3}
+  - countryName: Luxembourg
+    flag: {fileID: 21300000, guid: a3aa12080203a460fba780be5215c1fd, type: 3}
+  - countryName: Russie
+    flag: {fileID: 21300000, guid: 08c1ed7bd83e546bd8c02a87efe5bad5, type: 3}
+  - countryName: "Slov\xE9nie"
+    flag: {fileID: 21300000, guid: 8350f5e74729e4302a7d222da448316c, type: 3}
+  - countryName: Slovaquie
+    flag: {fileID: 21300000, guid: 14fc56694f1754338be3c22f5397112c, type: 3}
+  - countryName: Serbie
+    flag: {fileID: 21300000, guid: f3530b0a34e244c909cd17206f18d6ce, type: 3}
+  - countryName: "Norv\xE8ge"
+    flag: {fileID: 21300000, guid: c715432841fbc4bf2bae1d61df6530de, type: 3}
+  - countryName: Danemark
+    flag: {fileID: 21300000, guid: 9cd1f547796bc45988870a1ffd3c38d0, type: 3}
+  - countryName: Finlande
+    flag: {fileID: 21300000, guid: a22daecad0204474ab027ac328fee32c, type: 3}
+  - countryName: Islande
+    flag: {fileID: 21300000, guid: c330faf27740848e794b61e90ef8f20c, type: 3}
+  - countryName: Australie
+    flag: {fileID: 21300000, guid: 5f450b4cdb0a145dfaa57c684d042176, type: 3}
+  - countryName: "Nouvelle-Z\xE9lande"
+    flag: {fileID: 21300000, guid: facc3da605719406db233c4ec21789f9, type: 3}
+  - countryName: Colombie
+    flag: {fileID: 21300000, guid: ffffee7a497054af482b8275e5c62359, type: 3}
+  - countryName: "\xC9quateur"
+    flag: {fileID: 21300000, guid: 15e5391a5d4ab4244b598da6e3a68123, type: 3}
+  - countryName: Venezuela
+    flag: {fileID: 21300000, guid: a201795f44549466b81262e21cd722c7, type: 3}
+  - countryName: Autriche
+    flag: {fileID: 21300000, guid: 46efbee41bec240c6ab1ccfa587f5b99, type: 3}
+  - countryName: Lettonie
+    flag: {fileID: 21300000, guid: 09acb6c65d0a8400ab7ed60ac8214779, type: 3}
+  - countryName: Hongrie
+    flag: {fileID: 21300000, guid: 1365d621b69aa4c34968311390ea1d32, type: 3}
+  - countryName: Bulgarie
+    flag: {fileID: 21300000, guid: 8047f38e38a294b4881c84708b8421fe, type: 3}
+  - countryName: Lituanie
+    flag: {fileID: 21300000, guid: ea8576848226b4752a0b2837abd01029, type: 3}
+  - countryName: Estonie
+    flag: {fileID: 21300000, guid: f9159212362fb40a7bc88875b53a1851, type: 3}
+  - countryName: Argentine
+    flag: {fileID: 21300000, guid: 4a7a9405c1f424a22bbdbc964829f049, type: 3}
+  - countryName: Mexique
+    flag: {fileID: 21300000, guid: 748ed1e1806e14c3481969937499a667, type: 3}
+  - countryName: Chine
+    flag: {fileID: 21300000, guid: cfbf3a053181145bb9a929c57d6a4668, type: 3}
+  - countryName: "Vi\xEAt Nam"
+    flag: {fileID: 21300000, guid: b662c9e8947aa41a4b1848a4e4b577b2, type: 3}
+  - countryName: "Cor\xE9e du Sud"
+    flag: {fileID: 21300000, guid: 95df729297f94419f806117861119ee8, type: 3}
+  - countryName: Inde
+    flag: {fileID: 21300000, guid: e65182b5bf956444e83ed66951ef6680, type: 3}
+  - countryName: Nigeria
+    flag: {fileID: 21300000, guid: 65d54061ead75401e943f9ba5c90d0a1, type: 3}
+  - countryName: Cameroun
+    flag: {fileID: 21300000, guid: ac8611285c1a748969b470fffdc2fda7, type: 3}
+  - countryName: "S\xE9n\xE9gal"
+    flag: {fileID: 21300000, guid: b7e74db446abc4408b8bfc3bf5f32193, type: 3}
+  - countryName: Mali
+    flag: {fileID: 21300000, guid: ba4b517e9f3fb457a9b32b183646aad6, type: 3}
+  - countryName: "Guin\xE9e"
+    flag: {fileID: 21300000, guid: fbf7d6a995ef04b9c9663b47174894d7, type: 3}
+  - countryName: Maroc
+    flag: {fileID: 21300000, guid: bd05841c277054096856ea1d3b8159de, type: 3}
+  - countryName: Tunisie
+    flag: {fileID: 21300000, guid: e2334805d71504a698de9912029ba54c, type: 3}
+  - countryName: Turquie
+    flag: {fileID: 21300000, guid: 51ac27db8119d43bd8f2d041555ee6f6, type: 3}
+  - countryName: Croatie
+    flag: {fileID: 21300000, guid: 731c4f63020fa4b00afc23ee720157e5, type: 3}
+  - countryName: "Tch\xE9quie"
+    flag: {fileID: 21300000, guid: 482e3e54f9eb84ebab78312bf1f9de93, type: 3}
+  - countryName: Philippines
+    flag: {fileID: 21300000, guid: 832b27cb7a337412a973a50f3e1d9a0d, type: 3}
+  - countryName: Uruguay
+    flag: {fileID: 21300000, guid: d520feea9c0324dd596ae343165296cc, type: 3}
   scoreText: {fileID: 1808833927}
   countryText: {fileID: 1158895585}
   livesText: {fileID: 2075884717}
   gameOverPanel: {fileID: 209172995}
   finalScoreText: {fileID: 1632686598}
   spawner: {fileID: 1937381148}
-  trophee3D: {fileID: 0}
+  trophee3D: {fileID: 46330240}
 --- !u!4 &747235647
 Transform:
   m_ObjectHideFlags: 0

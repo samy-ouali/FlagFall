@@ -36,6 +36,10 @@ public class GameManager : MonoBehaviour
     {
         if (Instance == null) Instance = this;
         else { Destroy(gameObject); return; }
+
+        // Composants ML : ajoutes automatiquement s'ils ne sont pas deja sur l'objet.
+        if (GetComponent<AdaptiveDirector>() == null) gameObject.AddComponent<AdaptiveDirector>();
+        if (GetComponent<GameLogger>() == null) gameObject.AddComponent<GameLogger>();
     }
 
     void Start()
@@ -53,20 +57,46 @@ public class GameManager : MonoBehaviour
         return countries[Random.Range(0, countries.Count)];
     }
 
+    // Faux drapeau a faire tomber : choisi par l'AdaptiveDirector s'il est present
+    // (drapeaux ressemblants quand le joueur reussit bien), sinon au hasard.
+    public Country GetDistractor()
+    {
+        if (AdaptiveDirector.Instance != null)
+            return AdaptiveDirector.Instance.PickDistractor(currentTarget, countries);
+        return GetRandomCountry();
+    }
+
     void PickNextCountry()
     {
         if (countries.Count == 0) return;
-        Country next;
-        do { next = countries[Random.Range(0, countries.Count)]; }
-        while (countries.Count > 1 && currentTarget != null && next.countryName == currentTarget.countryName);
-        currentTarget = next;
+        if (AdaptiveDirector.Instance != null)
+        {
+            // Pays choisi selon le niveau du joueur (ou au hasard si le mode adaptatif est desactive).
+            currentTarget = AdaptiveDirector.Instance.PickTarget(countries, currentTarget);
+        }
+        else
+        {
+            Country next;
+            do { next = countries[Random.Range(0, countries.Count)]; }
+            while (countries.Count > 1 && currentTarget != null && next.countryName == currentTarget.countryName);
+            currentTarget = next;
+        }
+        if (GameLogger.Instance != null) GameLogger.Instance.LogTargetShown(currentTarget);
     }
 
     public void OnFlagCaught(Country caught)
     {
         if (!gameActive) return;
 
-        if (caught.countryName == currentTarget.countryName)
+        bool correct = caught.Code == currentTarget.Code;
+
+        // Donnees pour le ML : tous les drapeaux visibles au moment de la capture.
+        if (GameLogger.Instance != null)
+            GameLogger.Instance.LogCatch(currentTarget, caught, FlagsOnScreen(), CurrentFallSpeed());
+        if (AdaptiveDirector.Instance != null)
+            AdaptiveDirector.Instance.Record(currentTarget, correct);
+
+        if (correct)
         {
             score += 10;
             PickNextCountry();
@@ -80,11 +110,33 @@ public class GameManager : MonoBehaviour
         UpdateUI();
     }
 
+    // Appele par un drapeau qui sort de l'ecran sans avoir ete attrape.
+    public void OnFlagMissed(Country missed)
+    {
+        if (!gameActive || missed == null || currentTarget == null) return;
+        if (missed.Code == currentTarget.Code && GameLogger.Instance != null)
+            GameLogger.Instance.LogTargetMissed(currentTarget, CurrentFallSpeed());
+    }
+
+    List<Country> FlagsOnScreen()
+    {
+        var list = new List<Country>();
+        foreach (var f in FindObjectsByType<Flag>(FindObjectsSortMode.None))
+            if (f.Country != null) list.Add(f.Country);
+        return list;
+    }
+
+    float CurrentFallSpeed()
+    {
+        return spawner != null ? spawner.CurrentSpeed : -1f;
+    }
+
     void CheckGameOver()
     {
         if (lives <= 0)
         {
             gameActive = false;
+            if (GameLogger.Instance != null) GameLogger.Instance.LogGameOver(score);
             if (gameOverPanel != null) gameOverPanel.SetActive(true);
             if (trophee3D != null) trophee3D.SetActive(true);
             if (finalScoreText != null) finalScoreText.text = "Score final : " + score;
@@ -112,4 +164,15 @@ public class Country
 {
     public string countryName;
     public Sprite flag;
+
+    // Code du pays = nom du fichier image ("fr" pour Assets/Flags/fr.png).
+    // C'est l'identifiant utilise par le modele ML et dans les logs.
+    public string Code
+    {
+        get
+        {
+            if (flag == null) return countryName;
+            return flag.texture != null ? flag.texture.name : flag.name.Split('_')[0];
+        }
+    }
 }

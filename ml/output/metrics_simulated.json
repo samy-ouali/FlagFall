@@ -1,0 +1,27 @@
+{
+  "source": "simulated",
+  "n_catches": 1274,
+  "n_train": 891,
+  "n_test": 383,
+  "models": {
+    "Baseline (average rate)": {
+      "log_loss": 0.6936190493075933,
+      "auc": 0.5
+    },
+    "Elo (in-game model)": {
+      "log_loss": 0.6642173364081418,
+      "auc": 0.6405763877517603
+    },
+    "Logistic regression": {
+      "log_loss": 0.6443900818567275,
+      "auc": 0.7028546476720704
+    }
+  },
+  "logistic_coefficients": {
+    "elo_logit": 0.78,
+    "log_prev_attempts": 0.097,
+    "prev_success_rate": 0.499,
+    "max_onscreen_similarity": -2.241,
+    "fall_speed": -0.244
+  }
+}

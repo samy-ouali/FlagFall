@@ -1,0 +1,728 @@
+{
+  "source": "similarity only",
+  "created": "2026-10-20",
+  "n_events": 0,
+  "target_success": 0.7,
+  "countries": [
+    {
+      "code": "be",
+      "name_fr": "Belgique",
+      "name_en": "Belgium",
+      "difficulty": 0.0,
+      "similar": [
+        "ro",
+        "td",
+        "ml",
+        "gn"
+      ]
+    },
+    {
+      "code": "br",
+      "name_fr": "Brésil",
+      "name_en": "Brazil",
+      "difficulty": 0.0,
+      "similar": [
+        "pt",
+        "jp",
+        "se",
+        "co"
+      ]
+    },
+    {
+      "code": "ca",
+      "name_fr": "Canada",
+      "name_en": "Canada",
+      "difficulty": 0.0,
+      "similar": [
+        "nz",
+        "gb",
+        "jp",
+        "au"
+      ]
+    },
+    {
+      "code": "ch",
+      "name_fr": "Suisse",
+      "name_en": "Switzerland",
+      "difficulty": 0.0,
+      "similar": [
+        "id",
+        "de",
+        "dk",
+        "pl"
+      ]
+    },
+    {
+      "code": "de",
+      "name_fr": "Allemagne",
+      "name_en": "Germany",
+      "difficulty": 0.0,
+      "similar": [
+        "be",
+        "lt",
+        "pl",
+        "id"
+      ]
+    },
+    {
+      "code": "es",
+      "name_fr": "Espagne",
+      "name_en": "Spain",
+      "difficulty": 0.0,
+      "similar": [
+        "co",
+        "rs",
+        "pt",
+        "ve"
+      ]
+    },
+    {
+      "code": "fr",
+      "name_fr": "France",
+      "name_en": "France",
+      "difficulty": 0.0,
+      "similar": [
+        "cz",
+        "nl",
+        "ro",
+        "td"
+      ]
+    },
+    {
+      "code": "gb",
+      "name_fr": "Royaume-Uni",
+      "name_en": "United Kingdom",
+      "difficulty": 0.0,
+      "similar": [
+        "au",
+        "nz",
+        "us",
+        "jp"
+      ]
+    },
+    {
+      "code": "gr",
+      "name_fr": "Grèce",
+      "name_en": "Greece",
+      "difficulty": 0.0,
+      "similar": [
+        "fi",
+        "uy",
+        "dk",
+        "se"
+      ]
+    },
+    {
+      "code": "it",
+      "name_fr": "Italie",
+      "name_en": "Italy",
+      "difficulty": 0.0,
+      "similar": [
+        "ci",
+        "fr",
+        "ie",
+        "mx"
+      ]
+    },
+    {
+      "code": "jp",
+      "name_fr": "Japon",
+      "name_en": "Japan",
+      "difficulty": 0.0,
+      "similar": [
+        "kr",
+        "nz",
+        "it",
+        "fr"
+      ]
+    },
+    {
+      "code": "nl",
+      "name_fr": "Pays-Bas",
+      "name_en": "Netherlands",
+      "difficulty": 0.0,
+      "similar": [
+        "mc",
+        "lu",
+        "id",
+        "fr"
+      ]
+    },
+    {
+      "code": "pt",
+      "name_fr": "Portugal",
+      "name_en": "Portugal",
+      "difficulty": 0.0,
+      "similar": [
+        "rs",
+        "br",
+        "es",
+        "dk"
+      ]
+    },
+    {
+      "code": "se",
+      "name_fr": "Suède",
+      "name_en": "Sweden",
+      "difficulty": 0.0,
+      "similar": [
+        "fi",
+        "dk",
+        "no",
+        "is"
+      ]
+    },
+    {
+      "code": "us",
+      "name_fr": "États-Unis",
+      "name_en": "United States",
+      "difficulty": 0.0,
+      "similar": [
+        "lv",
+        "at",
+        "gb",
+        "lu"
+      ]
+    },
+    {
+      "code": "td",
+      "name_fr": "Tchad",
+      "name_en": "Chad",
+      "difficulty": 0.0,
+      "similar": [
+        "ro",
+        "gn",
+        "be",
+        "ml"
+      ]
+    },
+    {
+      "code": "ro",
+      "name_fr": "Roumanie",
+      "name_en": "Romania",
+      "difficulty": 0.0,
+      "similar": [
+        "td",
+        "gn",
+        "be",
+        "ml"
+      ]
+    },
+    {
+      "code": "id",
+      "name_fr": "Indonésie",
+      "name_en": "Indonesia",
+      "difficulty": 0.0,
+      "similar": [
+        "mc",
+        "at",
+        "pl",
+        "lu"
+      ]
+    },
+    {
+      "code": "mc",
+      "name_fr": "Monaco",
+      "name_en": "Monaco",
+      "difficulty": 0.0,
+      "similar": [
+        "id",
+        "nl",
+        "at",
+        "pl"
+      ]
+    },
+    {
+      "code": "pl",
+      "name_fr": "Pologne",
+      "name_en": "Poland",
+      "difficulty": 0.0,
+      "similar": [
+        "cz",
+        "id",
+        "bg",
+        "at"
+      ]
+    },
+    {
+      "code": "ie",
+      "name_fr": "Irlande",
+      "name_en": "Ireland",
+      "difficulty": 0.0,
+      "similar": [
+        "ci",
+        "it",
+        "ng",
+        "gb"
+      ]
+    },
+    {
+      "code": "ci",
+      "name_fr": "Côte d'Ivoire",
+      "name_en": "Ivory Coast",
+      "difficulty": 0.0,
+      "similar": [
+        "ie",
+        "it",
+        "ng",
+        "gb"
+      ]
+    },
+    {
+      "code": "lu",
+      "name_fr": "Luxembourg",
+      "name_en": "Luxembourg",
+      "difficulty": 0.0,
+      "similar": [
+        "lv",
+        "at",
+        "nl",
+        "hu"
+      ]
+    },
+    {
+      "code": "ru",
+      "name_fr": "Russie",
+      "name_en": "Russia",
+      "difficulty": 0.0,
+      "similar": [
+        "cz",
+        "si",
+        "pl",
+        "bg"
+      ]
+    },
+    {
+      "code": "si",
+      "name_fr": "Slovénie",
+      "name_en": "Slovenia",
+      "difficulty": 0.0,
+      "similar": [
+        "cz",
+        "ru",
+        "sk",
+        "pl"
+      ]
+    },
+    {
+      "code": "sk",
+      "name_fr": "Slovaquie",
+      "name_en": "Slovakia",
+      "difficulty": 0.0,
+      "similar": [
+        "si",
+        "cz",
+        "rs",
+        "ru"
+      ]
+    },
+    {
+      "code": "rs",
+      "name_fr": "Serbie",
+      "name_en": "Serbia",
+      "difficulty": 0.0,
+      "similar": [
+        "hr",
+        "cz",
+        "sk",
+        "si"
+      ]
+    },
+    {
+      "code": "no",
+      "name_fr": "Norvège",
+      "name_en": "Norway",
+      "difficulty": 0.0,
+      "similar": [
+        "is",
+        "dk",
+        "se",
+        "fi"
+      ]
+    },
+    {
+      "code": "dk",
+      "name_fr": "Danemark",
+      "name_en": "Denmark",
+      "difficulty": 0.0,
+      "similar": [
+        "no",
+        "se",
+        "is",
+        "fi"
+      ]
+    },
+    {
+      "code": "fi",
+      "name_fr": "Finlande",
+      "name_en": "Finland",
+      "difficulty": 0.0,
+      "similar": [
+        "se",
+        "dk",
+        "is",
+        "no"
+      ]
+    },
+    {
+      "code": "is",
+      "name_fr": "Islande",
+      "name_en": "Iceland",
+      "difficulty": 0.0,
+      "similar": [
+        "no",
+        "dk",
+        "fi",
+        "se"
+      ]
+    },
+    {
+      "code": "au",
+      "name_fr": "Australie",
+      "name_en": "Australia",
+      "difficulty": 0.0,
+      "similar": [
+        "nz",
+        "gb",
+        "jp",
+        "ca"
+      ]
+    },
+    {
+      "code": "nz",
+      "name_fr": "Nouvelle-Zélande",
+      "name_en": "New Zealand",
+      "difficulty": 0.0,
+      "similar": [
+        "au",
+        "gb",
+        "jp",
+        "ca"
+      ]
+    },
+    {
+      "code": "co",
+      "name_fr": "Colombie",
+      "name_en": "Colombia",
+      "difficulty": 0.0,
+      "similar": [
+        "ve",
+        "ec",
+        "lt",
+        "ro"
+      ]
+    },
+    {
+      "code": "ec",
+      "name_fr": "Équateur",
+      "name_en": "Ecuador",
+      "difficulty": 0.0,
+      "similar": [
+        "co",
+        "ve",
+        "ro",
+        "td"
+      ]
+    },
+    {
+      "code": "ve",
+      "name_fr": "Venezuela",
+      "name_en": "Venezuela",
+      "difficulty": 0.0,
+      "similar": [
+        "co",
+        "ec",
+        "mx",
+        "es"
+      ]
+    },
+    {
+      "code": "at",
+      "name_fr": "Autriche",
+      "name_en": "Austria",
+      "difficulty": 0.0,
+      "similar": [
+        "lv",
+        "lu",
+        "id",
+        "hu"
+      ]
+    },
+    {
+      "code": "lv",
+      "name_fr": "Lettonie",
+      "name_en": "Latvia",
+      "difficulty": 0.0,
+      "similar": [
+        "at",
+        "lu",
+        "lt",
+        "hu"
+      ]
+    },
+    {
+      "code": "hu",
+      "name_fr": "Hongrie",
+      "name_en": "Hungary",
+      "difficulty": 0.0,
+      "similar": [
+        "bg",
+        "lv",
+        "at",
+        "lt"
+      ]
+    },
+    {
+      "code": "bg",
+      "name_fr": "Bulgarie",
+      "name_en": "Bulgaria",
+      "difficulty": 0.0,
+      "similar": [
+        "hu",
+        "pl",
+        "ru",
+        "lt"
+      ]
+    },
+    {
+      "code": "lt",
+      "name_fr": "Lituanie",
+      "name_en": "Lithuania",
+      "difficulty": 0.0,
+      "similar": [
+        "lv",
+        "hu",
+        "at",
+        "td"
+      ]
+    },
+    {
+      "code": "ee",
+      "name_fr": "Estonie",
+      "name_en": "Estonia",
+      "difficulty": 0.0,
+      "similar": [
+        "lu",
+        "at",
+        "lv",
+        "id"
+      ]
+    },
+    {
+      "code": "ar",
+      "name_fr": "Argentine",
+      "name_en": "Argentina",
+      "difficulty": 0.0,
+      "similar": [
+        "uy",
+        "es",
+        "co",
+        "ec"
+      ]
+    },
+    {
+      "code": "mx",
+      "name_fr": "Mexique",
+      "name_en": "Mexico",
+      "difficulty": 0.0,
+      "similar": [
+        "it",
+        "ve",
+        "uy",
+        "co"
+      ]
+    },
+    {
+      "code": "cn",
+      "name_fr": "Chine",
+      "name_en": "China",
+      "difficulty": 0.0,
+      "similar": [
+        "vn",
+        "jp",
+        "kr",
+        "at"
+      ]
+    },
+    {
+      "code": "vn",
+      "name_fr": "Viêt Nam",
+      "name_en": "Vietnam",
+      "difficulty": 0.0,
+      "similar": [
+        "cn",
+        "cm",
+        "ml",
+        "gn"
+      ]
+    },
+    {
+      "code": "kr",
+      "name_fr": "Corée du Sud",
+      "name_en": "South Korea",
+      "difficulty": 0.0,
+      "similar": [
+        "jp",
+        "cn",
+        "no",
+        "vn"
+      ]
+    },
+    {
+      "code": "in",
+      "name_fr": "Inde",
+      "name_en": "India",
+      "difficulty": 0.0,
+      "similar": [
+        "ci",
+        "jp",
+        "au",
+        "gb"
+      ]
+    },
+    {
+      "code": "ng",
+      "name_fr": "Nigeria",
+      "name_en": "Nigeria",
+      "difficulty": 0.0,
+      "similar": [
+        "ci",
+        "it",
+        "ie",
+        "jp"
+      ]
+    },
+    {
+      "code": "cm",
+      "name_fr": "Cameroun",
+      "name_en": "Cameroon",
+      "difficulty": 0.0,
+      "similar": [
+        "sn",
+        "gn",
+        "ml",
+        "td"
+      ]
+    },
+    {
+      "code": "sn",
+      "name_fr": "Sénégal",
+      "name_en": "Senegal",
+      "difficulty": 0.0,
+      "similar": [
+        "cm",
+        "ml",
+        "gn",
+        "ma"
+      ]
+    },
+    {
+      "code": "ml",
+      "name_fr": "Mali",
+      "name_en": "Mali",
+      "difficulty": 0.0,
+      "similar": [
+        "gn",
+        "cm",
+        "sn",
+        "ro"
+      ]
+    },
+    {
+      "code": "gn",
+      "name_fr": "Guinée",
+      "name_en": "Guinea",
+      "difficulty": 0.0,
+      "similar": [
+        "ml",
+        "cm",
+        "ro",
+        "td"
+      ]
+    },
+    {
+      "code": "ma",
+      "name_fr": "Maroc",
+      "name_en": "Morocco",
+      "difficulty": 0.0,
+      "similar": [
+        "sn",
+        "tn",
+        "cm",
+        "ml"
+      ]
+    },
+    {
+      "code": "tn",
+      "name_fr": "Tunisie",
+      "name_en": "Tunisia",
+      "difficulty": 0.0,
+      "similar": [
+        "tr",
+        "ma",
+        "fr",
+        "dk"
+      ]
+    },
+    {
+      "code": "tr",
+      "name_fr": "Turquie",
+      "name_en": "Turkey",
+      "difficulty": 0.0,
+      "similar": [
+        "tn",
+        "id",
+        "mc",
+        "se"
+      ]
+    },
+    {
+      "code": "hr",
+      "name_fr": "Croatie",
+      "name_en": "Croatia",
+      "difficulty": 0.0,
+      "similar": [
+        "rs",
+        "si",
+        "sk",
+        "cz"
+      ]
+    },
+    {
+      "code": "cz",
+      "name_fr": "Tchéquie",
+      "name_en": "Czechia",
+      "difficulty": 0.0,
+      "similar": [
+        "si",
+        "ru",
+        "pl",
+        "sk"
+      ]
+    },
+    {
+      "code": "ph",
+      "name_fr": "Philippines",
+      "name_en": "Philippines",
+      "difficulty": 0.0,
+      "similar": [
+        "cz",
+        "ru",
+        "si",
+        "co"
+      ]
+    },
+    {
+      "code": "uy",
+      "name_fr": "Uruguay",
+      "name_en": "Uruguay",
+      "difficulty": 0.0,
+      "similar": [
+        "ar",
+        "gr",
+        "rs",
+        "fi"
+      ]
+    }
+  ]
+}

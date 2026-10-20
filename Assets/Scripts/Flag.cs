@@ -11,6 +11,8 @@ public class Flag : MonoBehaviour
     private Country country;
     private SpriteRenderer sr;
 
+    public Country Country { get { return country; } }
+
     void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
@@ -31,7 +33,11 @@ public class Flag : MonoBehaviour
 
         // Si le drapeau passe sous l'ecran, on le detruit.
         if (transform.position.y < -6f)
+        {
+            if (GameManager.Instance != null)
+                GameManager.Instance.OnFlagMissed(country);
             Destroy(gameObject);
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other)
